@@ -3,7 +3,7 @@
 define('MYSQL_SERVER', 'localhost');
 define('MYSQL_USER', 'root');
 define('MYSQL_PASSWORD', '');
-define('MYSQL_DB', 'blog');
+define('MYSQL_DB', 'Blog');
 
 /*define('MYSQL_SERVER', 'db2.ho.ua');
 define('MYSQL_USER', 'nadiad');

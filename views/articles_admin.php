@@ -20,10 +20,10 @@
 				</tr>
 				<?php foreach($articles as $a): ?>
 				<tr>
-					<td><?=$a['date']?></th>
-					<td><?=$a['title']?></th>
-					<td><a href="index.php?action=edit&id=><?=$a['id']?>">Edit</a></th>
-					<td><a href="index.php?action=delete&id=><?=$a['id']?>">Delete</a></th>
+					<td><?=$a['date']?></td>
+					<td><?=$a['title']?></td>
+					<td><a href="index.php?action=edit&id=><?=$a['id']?>">Edit</a></td>
+					<td><a href="index.php?action=delete&id=><?=$a['id']?>">Delete</a></td>
 					</tr>
 				<?php endforeach ?>
 				</table>

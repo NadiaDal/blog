@@ -1,4 +1,4 @@
-#body{
+div{
  background: #f07c67;
 }
 
@@ -13,9 +13,11 @@ footer{
 .admin-table{
     width: 100%;
 }
-    
+ 
 
-
+.form-item{
+    width: 100%;
+}
 .main{
    max-width: 1024px;
 	color:#666;
