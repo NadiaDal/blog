@@ -41,23 +41,52 @@ function articles_new($link, $title, $date, $content){
         
      
         $query = sprintf($t,
- mysql_real_escape_string($title),
- mysql_real_escape_string($date ),
- mysql_real_escape_string($content ));
+ mysqli_real_escape_string($link, $title),
+ mysqli_real_escape_string($link, $date ),
+ mysqli_real_escape_string($link, $content ));
         
-        echo $query;
+        //echo $query;
         $result=  mysqli_query($link,$query);
         
         if(!$result) die (mysqli_error ($link));
         return true;
 }
 
-function articles_edit($id, $title, $content, $date){
-	
+function articles_edit($link, $id, $title, $content, $date){
+        $title = trim($title);
+        $content = trim($content);
+        $date = trim($date);
+        
+        if($title == "") return false;
+        
+        $sql="UPDATE articles SET title = '%s', date = '%s', content = '%s' WHERE id = '%d'";
+        
+     
+        $query = sprintf($sql,
+        mysqli_real_escape_string($link, $title),
+        mysqli_real_escape_string($link, $date ),
+        mysqli_real_escape_string($link, $content ),
+                $id);
+        
+        //echo $query;
+        $result=  mysqli_query($link, $query);
+        
+        if(!$result) die (mysqli_error ($link));
+        return mysqli_affected_rows($link);
+  }
+
+function articles_delete($link, $id){
+    $id = (int)$id;
+    if($id == 0) return false;
+    $query = sprintf("DELETE FROM articles WHERE id = '%d'", $id);
+    $result = mysqli_query($link, $query);
+    if(!$result) die (mysqli_error ($link));
+    return mysqli_affected_rows($link);
 }
 
-function articles_delit($id){
-	
+
+function articles_intro($text, $length = 500){
+    return mb_substr($text, 0, $length);
 }
 
 ?>

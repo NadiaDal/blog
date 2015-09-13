@@ -19,7 +19,7 @@ footer{
     width: 100%;
 }
 .main{
-   max-width: 1024px;
+        max-width: 1024px;
 	color:#666;
 	background: white;
 	margin-top: 20px;
@@ -30,4 +30,11 @@ footer{
 	opacity: 0.8;
 	
 	letter-spacing: 0.45px;
+}
+
+#main_menu{
+     margin-top: 20px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     margin-bottom: -20px;
 }

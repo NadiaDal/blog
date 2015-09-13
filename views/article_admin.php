@@ -13,10 +13,26 @@
         <div class="container">
             <h1>First blog</h1>
             <div>
-                <form method="post" action="index.php?action=add">
-                    <label>Article name<br><input type="text" name="title" value="" class="form-item" autofocus="" required></label><br>
-                    <label>Date<br><input type="date" name="date" value="" class="form-item" required></label><br>
-                    <label>Content<br><textarea class="form-item" name="content" required></textarea></label><br>
+                <form method="post" 
+                      action="index.php?action=<?=$_GET['action']?>&id=<?=$_GET['id']?>">
+                    <label>Article name<br>
+                        <input type="text" 
+                               
+                               name="title" 
+                               value="<?=$article['title']?>" 
+                               class="form-item" 
+                               autofocus="" 
+                               required></label><br>
+                    <label>Date<br>
+                        <input type="date" 
+                               name="date" 
+                               value="<?=$article['date']?>" 
+                               class="form-item" 
+                               required></label><br>
+                    <label>Content<br>
+                        <textarea class="form-item" 
+                                  name="content" 
+                                  required><?=$article['content']?></textarea></label><br>
                     <input type="submit" value="Save" class="btn">    
                 </form>
             </div>

@@ -9,7 +9,8 @@
 <body>
 	<div class="container">
 		<h1>First blog</h1>
-		<a href="index.php?action=add">Add article</a>
+                <a href="index.php?action=add">Add article</a><br>
+               
 		<div>
 			<table class="admin-table">
 				<tr>
@@ -22,8 +23,8 @@
 				<tr>
 					<td><?=$a['date']?></td>
 					<td><?=$a['title']?></td>
-					<td><a href="index.php?action=edit&id=><?=$a['id']?>">Edit</a></td>
-					<td><a href="index.php?action=delete&id=><?=$a['id']?>">Delete</a></td>
+                                        <td><a href="index.php?action=edit&id=<?=$a['id']?>">Edit</a></td>				
+                                        <td><a href="index.php?action=delete&id=<?=$a['id']?>">Delete</a></td>
 					</tr>
 				<?php endforeach ?>
 				</table>
