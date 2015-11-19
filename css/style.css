@@ -1,0 +1,149 @@
+.jumbotron {
+    padding:70px 30px 70px 30px;
+    margin-bottom: 0px;
+    background: #7986CB ;
+    color:floralwhite;
+    font-size: 36px;
+    text-align: left;
+}
+
+
+.row-footer{
+    background-color: #AfAfAf;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+span{
+
+    font-size: 20px;
+}
+
+footer {
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+}
+
+.row-header{
+    margin:0px auto;
+    padding:0px auto;
+}
+
+.row-content {
+    margin:0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height:400px;
+}
+
+
+address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
+}
+
+body{
+    align: center;
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-inverse{
+    background: #303F9F;
+}
+
+.navbar-inverse .navbar-nav .active > a,
+.navbar-inverse .navbar-nav .active > a:hover,
+.navbar-inverse .navbar-nav .active > a:focus {
+    color: #fff;
+    background: #1A237E;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    color: #fff;
+    background: #1A237E;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu> li> a,
+.navbar-inverse .navbar-nav .open .dropdown-menu {
+    color: #eeeeee;
+    background-color:  #303F9F;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu> li> a:hover {
+    color:#000000;
+}
+
+table, td, th{
+    padding: 25px;
+    border: 3px solid #303F9F;
+
+}
+.addlink{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+label{
+    width: 20%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+
+}
+
+textarea{
+    width:70%;
+    height: 350px;
+}
+input {
+    width: 70%;
+}
+
+/*
+div{
+ background: #f07c67;
+}
+
+footer{
+    text-align: center;    
+}
+.article{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.admin-table{
+    width: 100%;
+}
+ 
+
+.form-item{
+    width: 100%;
+}
+.main{
+        max-width: 1024px;
+        color:#666;
+        background: white;
+        margin-top: 20px;
+        font-family: Verdana, sans-serif;
+        font-size: 16px;
+        font-weight:500;
+        line-height: 2;
+        opacity: 0.8;
+        
+        letter-spacing: 0.45px;
+}
+
+#main_menu{
+     margin-top: 20px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     margin-bottom: -20px;
+}
+*/
