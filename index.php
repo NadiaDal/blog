@@ -7,8 +7,4 @@
         include("views/menu.php");
         include("views/articles.php");
         include("views/footer.php");
-        
-        
-        
-
 ?>

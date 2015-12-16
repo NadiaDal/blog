@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html leng="en">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,7 +40,8 @@
                 <div id="navbarID"
                      class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Main</a></li>
+                        <li class="active"><a href="/blog">
+                                <span class="glyphicon glyphicon-home"></span> Home</a></li>
                         <li><a href="#">Calculation</a></li>
                         <li><a href="#">Works</a></li>
                         <li class="dropdown">

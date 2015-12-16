@@ -13,14 +13,14 @@
     </head>
     <body>
         <div class="container">
-            <div class="row">
-                <div>
+            <div class="rows">
+                <div class="col-xs-12">
                     
                     <a class="addlink" href="index.php?action=add">Add article</a><br>
 
-                    <div>
-                        <table class="admin-table">
-                            <tr>
+                    <div class="">
+                        <table class="table table-hover">
+                            <tr class="success">
                                 <th>Date</th>
                                 <th>Title</th>
                                 <th>Edit</th>

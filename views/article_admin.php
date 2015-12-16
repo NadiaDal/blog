@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="utf-8">
@@ -17,35 +16,67 @@
         <div class="container">
             
             <div class="row">
-                <form method="post" 
+                <div class="col-xs-12">
+                    <h3>Send us your Article</h3>
+                </div>
+                <div class="col-xs-12 col-sm-9">
+                    <form class="form-horizontal well" method="post"
                       action="index.php?action=<?= $_GET['action'] ?>&id=<?= $_GET['id'] ?>">
-                    <label for="title">Article name</label>
-                        <input type="text" 
+                        <div class="form-group">
+                            <label for="title" class="col-sm-2 control-lebel">Article name</label>
+                            <div class="col-sm-10">
+                                <input type="text"
 
-                               name="title" 
-                               value="<?= $article['title'] ?>" 
-                               class="form-item" 
-                               autofocus="" 
-                               required><br>
-                    <label for="dat">Date</label>
-                        <input type="date" 
-                               name="dat" 
-                               value="<?= $article['date'] ?>"
-                               
-                               class="form-item" 
-                               required><br>
-                    <label>Content</label>
-                        <textarea class="form-item" 
-                                  name="content" 
-                                  required><?= $article['content'] ?></textarea><br>
-                    <input type="submit" value="Save" class="btn">    
-                </form>
+                                       name="title"
+                                       value="<?= $article['title'] ?>"
+                                       class="form-item"
+                                       autofocus=""
+                                       required>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="date" class="col-sm-2 control-lebel">Date</label>
+                            <div class="col-sm-10">
+                                <input type="date"
+                                       name="date"
+                                       value="<?= $article['date'] ?>"
+
+                                       class="form-item"
+                                       required>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="content" class="col-sm-2 control-lebel">Content</label>
+                            <div class="col-sm-10">
+                            <textarea class="form-item"
+                                      name="content"
+                                      required><?= $article['content'] ?></textarea>
+                            </div>
+
+
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button id="article-submit" type="submit" value="Save" class="btn btn-primary">Save
+                                    article
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </form>
+            </div>
+                <div class="col-xs-12 col-sm-3">
+
+                </div>
             </div>
 
         </div>
+        <script>
+        </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
     </body>
 </html>
-
-
